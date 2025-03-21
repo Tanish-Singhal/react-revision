@@ -3,6 +3,7 @@ import CustomCounter from "./CustomCounter";
 import CustomWindowResize from "./CustomWindowResize";
 import CustomFetch from "./CustomFetch";
 import CustomDebounce from "./CustomDebounce";
+import CustomLocalStorage from "./CustomLocalStorage";
 
 const CustomHooks = () => {
   return (
@@ -52,6 +53,15 @@ const CustomHooks = () => {
         time has passed after the last change?
       </h3>
       <CustomDebounce />
+
+      <br />
+      <br />
+
+      <h3>
+        5. Build a custom hook that stores and retrieves data from the browser
+        localStorage.
+      </h3>
+      <CustomLocalStorage />
     </div>
   );
 };
