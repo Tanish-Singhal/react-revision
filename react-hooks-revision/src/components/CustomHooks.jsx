@@ -1,5 +1,6 @@
 import React from "react";
 import CustomCounter from "./CustomCounter";
+import CustomWindowResize from "./CustomWindowResize";
 
 const CustomHooks = () => {
   return (
@@ -22,6 +23,15 @@ const CustomHooks = () => {
 
       <h3>1. Build a custom hook to manage and update a counter.</h3>
       <CustomCounter />
+
+      <br />
+      <br />
+
+      <h3>
+        2. Build a custom hook to efficiently track and update window dimensions
+        dynamically.
+      </h3>
+      <CustomWindowResize />
     </div>
   );
 };
