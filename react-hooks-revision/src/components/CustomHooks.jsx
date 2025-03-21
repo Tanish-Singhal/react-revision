@@ -2,6 +2,7 @@ import React from "react";
 import CustomCounter from "./CustomCounter";
 import CustomWindowResize from "./CustomWindowResize";
 import CustomFetch from "./CustomFetch";
+import CustomDebounce from "./CustomDebounce";
 
 const CustomHooks = () => {
   return (
@@ -42,6 +43,15 @@ const CustomHooks = () => {
         and error states as well.
       </h3>
       <CustomFetch />
+
+      <br />
+      <br />
+
+      <h3>
+        4. Build a custom hook that delays updating a value until a specified
+        time has passed after the last change?
+      </h3>
+      <CustomDebounce />
     </div>
   );
 };
