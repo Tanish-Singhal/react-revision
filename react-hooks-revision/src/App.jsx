@@ -6,7 +6,8 @@ import "./App.css";
 // import { ThemeProvider } from "./components/hooks/machine-ques/ThemeContext";
 // import UserReducer from "./components/hooks/UserReducer";
 // import UseMemoAndUseCallback from "./components/hooks/UseMemoAndUseCallback";
-import ForwardRef from "./components/hooks/UseImperativeHandle";
+// import ForwardRef from "./components/hooks/UseImperativeHandle";
+import CustomHooks from "./components/CustomHooks";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <UseContext /> */}
       {/* <UserReducer /> */}
       {/* <UseMemoAndUseCallback /> */}
-      <ForwardRef />
+      {/* <ForwardRef /> */}
+      <CustomHooks />
     </div>
     // </ThemeProvider>
   );
