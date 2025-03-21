@@ -1,6 +1,7 @@
 import React from "react";
 import CustomCounter from "./CustomCounter";
 import CustomWindowResize from "./CustomWindowResize";
+import CustomFetch from "./CustomFetch";
 
 const CustomHooks = () => {
   return (
@@ -32,6 +33,15 @@ const CustomHooks = () => {
         dynamically.
       </h3>
       <CustomWindowResize />
+
+      <br />
+      <br />
+
+      <h3>
+        3. Build a custom hook to fetch data froma given URL and handle loading
+        and error states as well.
+      </h3>
+      <CustomFetch />
     </div>
   );
 };
