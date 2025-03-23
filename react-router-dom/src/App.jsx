@@ -13,6 +13,7 @@ import PostComments from "./pages/PostComments";
 import Error from "./components/Error";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import RequireAuth from "./components/RequireAuth";
 
 const router = createBrowserRouter([
   {
@@ -24,18 +25,22 @@ const router = createBrowserRouter([
         element: <Home />,
         children: [
           {
-            path: "/signup",
+            path: "signup",
             element: <Signup />,
           },
           {
-            path: "/login",
+            path: "login",
             element: <Login />,
           },
         ],
       },
       {
         path: "/posts",
-        element: <Post />,
+        element: (
+          <RequireAuth>
+            <Post />
+          </RequireAuth>
+        ),
       },
       {
         path: "/posts/:postId",

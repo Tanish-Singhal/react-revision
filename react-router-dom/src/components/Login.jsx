@@ -9,6 +9,7 @@ const Login = () => {
 
     console.log(e.target.email.value, e.target.password.value);
     if (e.target.email.value && e.target.password.value) {
+      localStorage.setItem("login", true);
       navigate("/posts");
     }
   };
