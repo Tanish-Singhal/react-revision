@@ -1,5 +1,11 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+  Routes,
+} from "react-router";
 import AppLayout from "./layouts/AppLayout";
 import Home from "./pages/Home";
 import Post from "./pages/Posts";
@@ -28,5 +34,21 @@ const router = createBrowserRouter([
 function App() {
   return <RouterProvider router={router} />;
 }
+
+// Old Fashion React Router DOM
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<AppLayout />}>
+//           <Route index element={<Home />} />
+//           <Route path="/posts" element={<Post />} />
+//           <Route path="/posts/:postId" element={<PostComments />} />
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
 
 export default App;
