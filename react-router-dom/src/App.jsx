@@ -10,10 +10,12 @@ import AppLayout from "./layouts/AppLayout";
 import Home from "./pages/Home";
 import Post from "./pages/Posts";
 import PostComments from "./pages/PostComments";
+import Error from "./components/Error";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
