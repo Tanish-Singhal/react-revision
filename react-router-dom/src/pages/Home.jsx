@@ -1,25 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router";
+import { NavLink, Outlet } from "react-router";
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    console.log(e.target.email.value, e.target.password.value);
-    if (e.target.email.value && e.target.password.value) {
-      navigate("/posts");
-    }
-  };
-
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="email" name="email" placeholder="Enter email" />
-        <input type="password" name="password" placeholder="Enter password" />
-        <button type="submit">Submit</button>
-      </form>
+      <div style={{ display: "flex", gap: "10px" }}>
+        <NavLink to="/signup">Signup</NavLink>
+        <NavLink to="/login">Login</NavLink>
+      </div>
+      <Outlet />
     </div>
   );
 };

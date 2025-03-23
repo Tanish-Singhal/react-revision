@@ -11,6 +11,8 @@ import Home from "./pages/Home";
 import Post from "./pages/Posts";
 import PostComments from "./pages/PostComments";
 import Error from "./components/Error";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        children: [
+          {
+            path: "/signup",
+            element: <Signup />,
+          },
+          {
+            path: "/login",
+            element: <Login />,
+          },
+        ],
       },
       {
         path: "/posts",
