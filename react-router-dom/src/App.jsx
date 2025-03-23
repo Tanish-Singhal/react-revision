@@ -14,6 +14,7 @@ import Error from "./components/Error";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import RequireAuth from "./components/RequireAuth";
+import Product from "./pages/Product";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/posts/:postId",
         element: <PostComments />,
+      },
+      {
+        path: "/product",
+        element: <Product />,
       },
     ],
   },
